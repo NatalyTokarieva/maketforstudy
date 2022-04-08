@@ -1,0 +1,48 @@
+:root{
+    --text-color: #FFFFFF;
+    --background: #242B33;
+    --accent-color: #D4C17F;
+
+}
+
+body{
+   background-color: var(--background);
+   color: var(--text-color);
+
+   font-family: 'Raleway' , sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   
+}
+
+.list{
+    list-style: none;
+}
+
+.container{
+    max-width: 1110;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.container-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 25px;
+
+}
+.site-nav .link{
+    color: var(--text-color);
+    text-decoration: none;
+   
+}
+.site-nav{
+    display: flex;
+}
+.site-nav .item{
+    margin-right: 42px;
+    
+}
