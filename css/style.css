@@ -14,18 +14,22 @@ body{
    font-size: 14px;
    
 }
-
+h1, h2, p, ul{
+    margin: 0;
+    padding: 0;
+}
 .list{
     list-style: none;
 }
 
 .container{
-    max-width: 1110;
-    width: 100%;
+    width: 1110px;
     padding-left: 15px;
     padding-right: 15px;
 
 }
+
+
 .container-head{
     display: flex;
     align-items: center;
@@ -58,7 +62,7 @@ body{
 }
 
 .hero-title{
-font-family: 'Playfair Display';
+font-family: 'Playfair Display' , sans-serif;
 font-weight: 700;
 font-size: 3rem;
 line-height:1.3333;
@@ -81,6 +85,9 @@ color: var(--accent-color);
 .hero-adress:first-child{
     margin-right: 134px;
 }
+.section-logo{
+    margin-top: 100px;
+}
 .visually-hidden { 
     position: absolute; 
     width: 1px; 
@@ -95,16 +102,41 @@ color: var(--accent-color);
   } 
   .logo-info{
       display: flex;
-  }
-  .logo-info .item{
-      margin-right: 65px;
-  }
-  .logo-info p{
+      text-align: center;
+      justify-content: center;
+      margin:-32px;
+      flex-wrap: wrap;
+      align-items: center;
+}
+  .logo-item{
+      padding:32px;
+    }
+
+    .img-logo{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 48px;
+    }
+  .text-logo{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 1.35;
+    width: 193px;
+    padding-bottom: 189px;
 
     text-align: center;
   }
+
+ .flat-title{
+     font-family: 'Playfair Display' , sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.3333;
+    color: var(--accent-color);
+ } 
+ .flat-text{
+    font-size: 24px;
+    line-height: 1.16;
+ }
