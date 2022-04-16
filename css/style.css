@@ -4,7 +4,9 @@
     --accent-color: #D4C17F;
 
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
    background-color: var(--background);
    color: var(--text-color);
@@ -21,11 +23,16 @@ h1, h2, p, ul{
 .list{
     list-style: none;
 }
+img{
+    max-width: 100%;
+}
 
 .container{
-    width: 1110px;
+    max-width: 1110px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
 
 }
 
@@ -52,24 +59,37 @@ h1, h2, p, ul{
     
 }
 .section{
-   margin: 0;
-   padding: 0;
+ padding: 90px 0;
 }
 .hero-section{
-    padding: 225px 0 74px;
+    padding: 200px 0 74px;
     background-image:url('../images/Rectangle\(1\).jpg') ;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--background);
+    background-attachment: fixed ;
 }
 
 .hero-title{
-font-family: 'Playfair Display' , sans-serif;
-font-weight: 700;
-font-size: 3rem;
-line-height:1.3333;
-text-align: center;
-max-width: 556px;
-margin: 0 auto 340px;
-color: var(--accent-color);
+    font-family: 'Playfair Display' , sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height:1.3333;
+    text-align: center;
+    max-width: 556px;
+    width: 100%;
+    margin: 0 auto 340px;
+    color: var(--accent-color);
+}
+.hero-title::after{
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(../images/mouse.svg);
+    background-size: 2.5rem 2.5rem ;
+    content: '';
+    margin: 100px auto 0;
 }
 .adress-info{
     text-align: center;
@@ -136,7 +156,26 @@ color: var(--accent-color);
     line-height: 1.3333;
     color: var(--accent-color);
  } 
+ .flat-link{
+    display: flex;
+    flex-wrap: wrap;
+ }
  .flat-text{
     font-size: 24px;
     line-height: 1.16;
+    display: block;
  }
+ .flat-item{
+     flex-basis: calc(100%/2);
+     padding: 1rem;
+ }
+ .img-flat{
+     max-width: 100%;
+     object-fit: cover;
+     height: 100%;
+ }
+ .advertising-section{
+     background-image:url(../images/bgc2.jpg) ;
+     background-repeat: no-repeat;
+     background-size: cover;
+    }

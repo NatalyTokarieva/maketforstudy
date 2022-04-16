@@ -45,7 +45,7 @@
             </div>
        </section>
         <!--Logo of company-->
-        <section class="section-logo">
+        <section class="section-logo section">
             <div class="container">
                 <h2 class="visually-hidden">Что есть в нашем комплексе</h2>
                 <ul class="logo-info list">
@@ -67,24 +67,24 @@
             </div>
         </section>
         <!--Which flat they suggest-->
-        <section>
+        <section class="section">
             <div class="container">
                 <h2 class="flat-title">Наші квартири</h2>
-                <ul class="list">
-                    <li>
-                        <img src="./images/Rectangle1.jpg" alt="Картинка 1 комнатной квартиры" width="535" height="320" >
+                <ul class="list flat-link">
+                    <li class="flat-item">
+                        <img class="img-flat" src="./images/Rectangle1.jpg" alt="Картинка 1 комнатной квартиры" width="535" height="320" >
                         <p class="flat-text">Стандарт — 1 поверх</p>
                     </li>
-                    <li>
-                        <img src="./images/Rectangle(2).jpg" alt="Картинка 2 комнатной квартиры"width="535" height="320" >
+                    <li class="flat-item">
+                        <img class="img-flat" src="./images/Rectangle(2).jpg" alt="Картинка 2 комнатной квартиры"width="535" height="320" >
                         <p class="flat-text">Комфорт — 2 поверхи</p>
                     </li>
-                    <li>
-                        <img src="./images/Rectangle(3).jpg" alt="Картинка 3 комнатной квартиры"width="535" height="320" >
+                    <li class="flat-item">
+                        <img class="img-flat" src="./images/Rectangle(3).jpg" alt="Картинка 3 комнатной квартиры"width="535" height="320" >
                         <p class="flat-text">Люкс — 3 поверхи</p>
                     </li>
-                    <li>
-                        <img src="./images/Rectangle(4).jpg" alt="Картинка 3 комнатной квартиры"width="535" height="320" >
+                    <li class="flat-item">
+                        <img class="img-flat" src="./images/Rectangle(4).jpg" alt="Картинка 3 комнатной квартиры"width="535" height="320" >
                         <p class="flat-text">Супер Люкс — 4 поверхи</p>
                     </li>
             </div>
@@ -92,8 +92,9 @@
             </ul>
         </section>
         <!--Table-->
-        <section>
-            <h2>Ціни</h2>
+        <section class="section">
+           <div class="container">
+            <h2 class="flat-title">Ціни</h2>
             <table>
                 <caption>
                     Каталог типів квартир за ціною
@@ -135,10 +136,12 @@
                 </tr>
             </tfoot>
             </table>
+           </div>
         </section>
         <!--Вводим информацию-->
-        <section>
-            <h2>Хочете подивитися?</h2>
+        <section class="advertising-section section">
+          <div class="container">
+            <h2 class="flat-title">Хочете подивитися?</h2> 
             <p>Житловий комплекс в історичному центрі міста HouseVOP завершив <br> будівництво та здав об’єкт в експлаутацію 11 березня 2021 року. <br>
                 Якщо ви маєте бажання подивитися квартиру, чекаємо на Вас.</p>
             <ul>
@@ -148,36 +151,43 @@
             <p> <sup>*</sup> *Ми нікому не передаємо ваші дані. <br>
                 І не зберігаємо ваш номер у базу. </p>
                 <button type="button"> Подивитись район </button>
+          
             </section>
 <!--Video and map-->
-            <section>
-                <h2>Видео</h2>
+            <section class="section">
+            
+                <h2 class="flat-title">Видео</h2>
                 <iframe width="720" height="650"
                      src="https://www.youtube.com/embed/YNyFAro1E5M" 
                      title="YouTube video player" 
                      frameborder="0" 
                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                      allowfullscreen></iframe>
+                    </div>    
             </section>
-            <section>
-                <h2>Район на мапі</h2>
+            <div class="container">
+            <section class="section">
+                <h2 class="flat-title">Район на мапі</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.2105687150734!2d-47.895762185195814!3d-15.792847189052207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2fe53c69c215%3A0xd7704b3f4eccf40d!2sMeli%C3%A1%20Brasil%2021!5e0!3m2!1sru!2sro!4v1648101715785!5m2!1sru!2sro"
                  width="1110" 
                  height="358" 
                  style="border:0;"
                  allowfullscreen="" loading="lazy"></iframe>
+            </div>
             </section>
-            <section>
-                <h2>Залишились питання?</h2>
+            <section class="section">
+                <div class="container">
+                    <h2 class="flat-title">Залишились питання?</h2>
                 <p> <sup>*</sup> Ми нікому не передаємо ваші дані.
                     І не зберігаємо ваш номер у базу.</p>
-                    <ul>
+                    <ul class="list">
                         <li> <a href="">Ваше ім’я </a> </li>
                         <li> <a href=""> Ваш телефон</a></li>
                     </ul>
                     <p> <sup>*</sup> *Ми нікому не передаємо ваші дані. <br>
                         І не зберігаємо ваш номер у базу. </p>
                         <button type="button"> Подивитись район </button>
+                </div>
             </section>
     </main>
     <!--Footer-->
@@ -186,7 +196,7 @@
              <img src="./images/HouseVOP.svg" alt="Loogotip">
         </a>
              <p> &#169; <time datetime="2020"> 2020 </time> Всі права захищені. HouseVOP</p>
-        <ul>
+        <ul class="list">
             <li> <a href="">Про комплекс</a> </li>
             <li> <a href="">Район</a> </li>
             <li> <a href="">Каталог квартир</a> </li>
@@ -195,14 +205,14 @@
         </ul>
         <!--Address-->
         <address>
-            <ul>
+            <ul class="list">
                <li><a href="https://goo.gl/maps/YQ37vH64xuiF5Tu78">Адреса:  вул. Садова 10-15</a></li>
                <li><a href="">+38 (099)1234567</a></li>
                <li> <p>Відділ продажу: 10:00 - 20:00</p></li>
                <li> <a href="mailto:vip@housevip.ru">E-mail: vip@housevip.ru</a> </li>
             </ul> 
         </address>
-        <ul>
+        <ul class="list">
             <li>
                 <a href="">
                 <img src="./images/Vector.svg" alt="Logo Youtube"></a>
