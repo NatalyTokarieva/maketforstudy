@@ -38,9 +38,22 @@
         <section class="hero-section section">
             <div class="container">
                 <h1 class="hero-title">Житловий комплекс в історичному центрі</h1>
-                <address class="adress-info">
-                    <a href="" class="hero-adress">вул. Садова 10-15</a>
-                    <a href="" class="hero-adress">+38 (099) 123-45-67</a>
+               
+               <address class="adress-info">
+        
+                    <a href="" class="hero-place">
+                        <svg class="hero-icon">
+                        <use href="./images/icons.svg#iconplaceholder">
+                        </use>
+                        </svg>
+                       <p class="hero-adress">вул. Садова 10-15</p></a>
+                       <a href="" class="hero-place">
+                        <svg class="hero-icon">
+                        <use href="./images/icons.svg#iconphone-call">
+                        </use>
+                        </svg>
+                       <p class="hero-adress">+38 (099) 123-45-67</p></a>
+                    
                 </address>
             </div>
        </section>
@@ -67,7 +80,7 @@
             </div>
         </section>
         <!--Which flat they suggest-->
-        <section class="section">
+        <section class="flat-section section">
             <div class="container">
                 <h2 class="flat-title">Наші квартири</h2>
                 <ul class="list flat-link">
@@ -191,45 +204,57 @@
             </section>
     </main>
     <!--Footer-->
-    <footer>
-        <a href="">
-             <img src="./images/HouseVOP.svg" alt="Loogotip">
+    <footer class="socials">
+        <div class="footer-logo container">
+            <div class="footer-house">
+        <a href="" >
+            <img class="img-logo" src="./images/first-screen__logo.svg" alt="ЖИТЛОВИЙ КОМПЛЕКС">
         </a>
-             <p> &#169; <time datetime="2020"> 2020 </time> Всі права захищені. HouseVOP</p>
-        <ul class="list">
-            <li> <a href="">Про комплекс</a> </li>
-            <li> <a href="">Район</a> </li>
-            <li> <a href="">Каталог квартир</a> </li>
-            <li> <a href="">Іпотека</a> </li>
-            <li> <a href="">Контакти</a> </li>
+             <p class="footer-text"> &#169; <time datetime="2020"> 2020 </time> Всі права захищені. HouseVOP</p>
+             </div>
+             <div class="aria-footer">
+        <ul class="footer-list list">
+            <li class="item"> <a href="" class="footer-text">Про комплекс</a> </li>
+            <li class="item"> <a href="" class="footer-text">Район</a> </li>
+            <li class="item"> <a href="" class="footer-text">Каталог квартир</a> </li>
+            <li class="item"> <a href="" class="footer-text">Іпотека</a> </li>
+            <li class="item"> <a href="" class="footer-text">Контакти</a> </li>
         </ul>
+        </div>
+
         <!--Address-->
-        <address>
-            <ul class="list">
-               <li><a href="https://goo.gl/maps/YQ37vH64xuiF5Tu78">Адреса:  вул. Садова 10-15</a></li>
-               <li><a href="">+38 (099)1234567</a></li>
-               <li> <p>Відділ продажу: 10:00 - 20:00</p></li>
-               <li> <a href="mailto:vip@housevip.ru">E-mail: vip@housevip.ru</a> </li>
+        <div>
+        <address class="">
+            <ul class="footer-phone list">
+               <li class="item"><a class="footer-text" href="https://goo.gl/maps/YQ37vH64xuiF5Tu78">Адреса:  вул. Садова 10-15</a></li>
+               <li class="item"><a class="footer-text" href="">+38 (099)1234567</a></li>
+               <li class="item"> <p class="footer-text">Відділ продажу: 10:00 - 20:00</p></li>
+               <li class="item"> <a href="mailto:vip@housevip.ru" class="footer-text">E-mail: <span>vip@housevip.ru</span></a> </li>
             </ul> 
         </address>
-        <ul class="list">
-            <li>
-                <a href="">
-                <img src="./images/Vector.svg" alt="Logo Youtube"></a>
-            </li>
-            <li>
-                <a href="">
-                <img src="./images/Vector(1).svg" alt="Logo Vkontakte"></a>
-            </li>   
-             <li>
-                <a href="">
-                <img src="./images/Vector(2).svg" alt="Logo Facebook"></a>
-            </li>
-            <li>
-                <a href="">
-                <img src="./images/instagram.svg" alt="Logo Instagram"></a>
-            </li>
-        </ul>
+      
+        
+             <div class="instagram-icon">
+                    <a href="#" class="twitter instagram-item">
+                        <svg class="instagram">
+                        <use href="./images/icons.svg#iconinstagram"></use>
+                   </svg></a> 
+                   <a href="#" class="twitter instagram-item" >
+                    <svg class="instagram">
+                    <use href="./images/icons.svg#iconyoutube"></use>
+                    </svg></a>
+                    <a href="#" class="twitter instagram-item" >
+                        <svg class="instagram">
+                        <use href="./images/icons.svg#iconfacebook-logo"></use>
+                        </svg></a>
+                        <a href="#" class="twitter instagram-item" >
+                            <svg class="instagram" >
+                            <use href="./images/icons.svg#iconVK"></use>
+                        </svg></a>
+                    </div> 
+        
+        </div>
+    </div>
     </footer>
 </body>
 </html>

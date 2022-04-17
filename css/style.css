@@ -2,7 +2,8 @@
     --text-color: #FFFFFF;
     --background: #242B33;
     --accent-color: #D4C17F;
-
+    --footer-color: 
+    rgba(255, 255, 255, 1);
 }
 html{
     scroll-behavior: smooth;
@@ -51,6 +52,9 @@ img{
     line-height: 1.14;
    
 }
+.site-nav .link:hover{
+   color: var(--accent-color);
+}
 .site-nav{
     display: flex;
 }
@@ -79,7 +83,7 @@ img{
     text-align: center;
     max-width: 556px;
     width: 100%;
-    margin: 0 auto 340px;
+    margin: 0 auto 300px;
     color: var(--accent-color);
 }
 .hero-title::after{
@@ -92,19 +96,40 @@ img{
     margin: 100px auto 0;
 }
 .adress-info{
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
     
 }
+
+.hero-place{
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+    justify-content: center;
+}
+.hero-place:hover{
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+.hero-icon{
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+    fill: currentColor;
+}
+
 .hero-adress{
     font-size: 18px;
     line-height: 1.1666;
     color: var(--text-color);
     font-style: normal;
     text-decoration: none;
+    cursor: pointer;
+    font-style: normal;
+
 }
-.hero-adress:first-child{
-    margin-right: 134px;
-}
+
 .section-logo{
     margin-top: 100px;
 }
@@ -148,6 +173,9 @@ img{
 
     text-align: center;
   }
+.flat-section{
+    padding-top: 0px;
+}
 
  .flat-title{
      font-family: 'Playfair Display' , sans-serif;
@@ -179,3 +207,68 @@ img{
      background-repeat: no-repeat;
      background-size: cover;
     }
+.socials{
+    margin-top: 72px;
+    margin-bottom: 60px;
+}
+    .footer-logo{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+     }
+
+
+   .img-logo{
+       margin-top: 0px;
+      
+       width: 165px;
+       height: 66px;
+   }
+   .footer-text{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color:var(--footer-color);
+    font-style: normal;
+   }
+ 
+   .footer-text span{
+       color: var(--accent-color);
+   }
+   .footer-list .item, .footer-phone .item{
+       margin-bottom: 15px;
+   }
+  
+.instagram-icon{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+  
+}
+
+.instagram-item{
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background-color: var(--button-text-color);
+    border-radius: 50%;
+    border: none;
+    margin-right: 5px;
+    margin-left: -12px;
+    color: var(--icon-border);
+    padding: 12px;
+}
+.instagram-item:hover{
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+}
+.instagram{
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}
+  .footer-phone{
+      margin-right: 100px;
+  }  
