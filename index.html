@@ -14,21 +14,21 @@
 <body>
     <!--Хедер-->
     <header>
-        <div class="container-head container">
+        <div class="header container">
            
             <a href="">
                 <img src="./images/first-screen__logo.svg" alt="ЖИТЛОВИЙ КОМПЛЕКС">
            </a>
                
             <nav>
-                <ul class="site-nav list">
-                    <li class="item"> <a href="" class="link">Про комплекс</a> </li>
-                    <li class="item"> <a href="" class="link">Район</a> </li>
-                    <li class="item"> <a href="" class="link">Каталог квартир</a> </li>
-                    <li class="item"> <a href="" class="link">Іпотека</a> </li>
-                    <li class="item"> <a href="" class="link">Контакти</a> </li>
+                <ul class="menu list">
+                    <li class="menu__item"> <a href="" class="menu__link">Про комплекс</a> </li>
+                    <li class="menu__item"> <a href="" class="menu__link">Район</a> </li>
+                    <li class="menu__item"> <a href="" class="menu__link">Каталог квартир</a> </li>
+                    <li class="menu__item"> <a href="" class="menu__link">Іпотека</a> </li>
+                    <li class="menu__item"> <a href="" class="menu__link">Контакти</a> </li>
                 </ul>
-                </nav>
+            </nav>
            
         </div>
 
@@ -109,11 +109,11 @@
            <div class="container">
             <h2 class="flat-title">Ціни</h2>
             <table>
-                <caption>
+                <caption class="table">
                     Каталог типів квартир за ціною
                 </caption>
                 <thead>
-                    <tr>
+                    <tr class="">
                         <th>Квартира</th>
                         <th>Поверховість</th>
                         <th>Ціна</th>
@@ -169,25 +169,25 @@
         </div>
     </form>
     <form>
-        <div>
+        <div class="submit-button">
             <input class="check-phone" type="text" name="phome" id="phone" placeholder="Ваш телефон">
                 <label for="phone" class="label-phone"></label>
-           <div class="submit-button">
+          
                 <button class="check-button" type="submit"> Подивитись район </button></div>
-            </div></form>
+            </form>
             </div>
             </section>
 <!--Video and map-->
             <section class="section">
-                <div class="container">
-                <h2 class="flat-title">Видео</h2>
-                <iframe width="720" height="650"
-                     src="https://www.youtube.com/embed/YNyFAro1E5M" 
-                     title="YouTube video player" 
-                     frameborder="0" 
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                     allowfullscreen></iframe>
-                    </div>    
+                <div class="container icon-video">
+                    <h2 class="flat-title visually-hidden">Видео</h2>
+                    <div class="picture-video">
+                    <img src="./images/pic-video.jpg" alt="Повинно бути відео"></div>
+                <div class="video-icon">
+                    <svg class="iconvideo">
+                        <use href="./images/icons.svg#iconvidoe">
+                        </use>  </svg> </div>  
+                        </div>  
             </section>
             <div class="container">
             <section class="section">
@@ -202,15 +202,20 @@
             <section class="section">
                 <div class="container">
                     <h2 class="flat-title">Залишились питання?</h2>
-                <p> <sup>*</sup> Ми нікому не передаємо ваші дані.
-                    І не зберігаємо ваш номер у базу.</p>
-                    <ul class="list">
-                        <li> <a href="">Ваше ім’я </a> </li>
-                        <li> <a href=""> Ваш телефон</a></li>
-                    </ul>
-                    <p> <sup>*</sup> *Ми нікому не передаємо ваші дані. <br>
-                        І не зберігаємо ваш номер у базу. </p>
-                        <button type="button"> Подивитись район </button>
+                    <form action="" class="question">
+
+                            <label for="name" class="label-name">*Ми нікому не передаємо ваші дані.
+                                І не зберігаємо ваш номер у базу.</label> 
+                            <input class="check-name" type="text" name="name" id="name" placeholder="Ваше ім’я">
+                           
+          
+              
+              
+                        <input class="check-phone" type="text" name="phome" id="phone" placeholder="Ваш телефон">
+                            <label for="phone" class="label-phone"></label>
+                      
+                            <button data-modal-open class="check-button" type="submit"> Подивитись район </button>
+                        </form>
                 </div>
             </section>
     </main>
@@ -267,6 +272,53 @@
         </div>
     </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="button-close" data-modal-close>
+                    <svg class="close-icon icon">
+                        <use href="./images/icons.svg#iconclose"></use>
+                </svg></button>
+          
+                      <div class="modal-container">
+                                <b class="flat-title">Хочете подивитися?</b>
+                             <form name="data-form" action="#" novalidate>
+                        
+                                <div class="modal-class">
+                                    <label for="name" class="text-modal">Имя</label>
+                                    <input class="name" type="text" name="name" id="name">
+                             
+                                </div>
+    
+                                <div class="modal-class">
+                                    <label for="tel" class="text-modal">Телефон</label>
+                                    <input type="text" name="tel" id="tel">
+                                 
+                                </div>
+    
+                                <div class="modal-class">
+                                    <label for="mail-modal" class="text-modal">Почта</label>
+                                    <input type="text" name="mail-modal" id="mail-modal" autofocus>
+                            
+                                </div>
+                        
+                                <div class="modal-class">
+                                        <label for="comment" class="text-modal"> Комментарий</label>
+                                        <textarea class="form-text" name="comment" id="comment" placeholder="Введите текст..."></textarea>
+                                </div>
+                                
+                                
+                                    <div class="modal-button">
+                                        <button type="submit" class="footer-button button">Отправить</button>
+                                    </div>
+                             </form>
+                     </div>
+                      
+        </div>
+        
+    </div>
+     
+    <script src="./modal.js"></script>
 </body>
 </html>
  
